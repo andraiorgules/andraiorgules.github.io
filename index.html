@@ -3,15 +3,15 @@
 <body style="background-color:pink;">
 
 <h1 style="font-family:verdana;text-align:center;">Andrada's HTML Website</h1>
-<p style="font-family:courier;text-align:center;">My first adventure into the world of HTML.</p>
+<p id="demo" style="font-family:courier;text-align:center;">My first adventure into the world of HTML.</p>
   
 <img src="hellokitty.png" alt="Hello Kitty" width="400" height="400">
   
-<button type="button" onclick="myFunction()">Press this button for a surprise :)</button>
+<button type="button" onclick="myFunction()">Press me!!!</button>
 
 <script>
 function myFunction() {
-  href="https://www.nyan.cat/";
+  document.getElementById("demo").innerHTML = "My awesome HTML page.";
 }
 </script>
   
