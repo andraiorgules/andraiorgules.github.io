@@ -2,12 +2,11 @@ let osc, playing, freq, amp;
 
 function setup() 
 {
-  let div = createDiv('').size(10, 10);
-  div.style('background-color', 'blue');
-  div.center();
   let cnv = createCanvas(100, 100);
   cnv.mousePressed(playOscillator);
+  cnv.style('background-color', 'blue');
   osc = new p5.Oscillator('sine');
+  cnv.center();
 }
 
 function draw() 
