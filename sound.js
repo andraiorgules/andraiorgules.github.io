@@ -13,7 +13,7 @@ function draw()
   freq = constrain(map(mouseX, 0, width, 100, 500), 100, 500);
   amp = constrain(map(mouseY, height, 0, 0, 1), 0, 1);
 
-  text('Click ad Drag to play', 20, 20);
+  text('Click and Drag to play', 20, 20);
   text('Freq: ' + freq, 20, 40);
   text('Amp: ' + amp, 20, 60);
 
