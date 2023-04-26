@@ -6,7 +6,7 @@ function setup()
   cnv.mousePressed(playOscillator);
   cnv.style('background-color', 'blue');
   osc = new p5.Oscillator('sine');
-  cnv.center();
+  cnv.center([horizontally]);
 }
 
 function draw() 
