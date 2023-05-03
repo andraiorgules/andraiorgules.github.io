@@ -5,7 +5,6 @@ function setup()
   let cnv = createCanvas(200, 200);
   cnv.mousePressed(playOscillator);
   osc = new p5.Oscillator('sine');
-  textAlign(CENTER);
 }
 
 function draw() 
@@ -25,10 +24,6 @@ function draw()
     osc.amp(amp, 0.1);
     fill(0);
   }
-  if (! playing)
-  {
-    fill(255)
-  }
     ellipse(mouseX, mouseY, 80, 80);
 }
 
@@ -46,4 +41,5 @@ function mouseReleased()
   // ramp amplitude to 0 over 0.5 seconds
   osc.amp(0, 0.5);
   playing = false;
+  fill(255);
 }
