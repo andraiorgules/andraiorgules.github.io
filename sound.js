@@ -14,8 +14,6 @@ function draw()
   amp = constrain(map(mouseY, height, 0, 0, 1), 0, 1);
 
   text('Click and Drag to Play', 15, 15);
-  text('Freq: ' + freq, 15, 15);
-  text('Amp: ' + amp, 15, 15);
 
   if (playing) 
   {
@@ -23,6 +21,9 @@ function draw()
     osc.freq(freq, 0.1);
     osc.amp(amp, 0.1);
     fill(0);
+  text('Click and Drag to Play', 15, 15);
+  text('Freq: ' + freq, 15, 16);
+  text('Amp: ' + amp, 15, 17);
   }
     ellipse(mouseX, mouseY, 80, 80);
 }
