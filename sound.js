@@ -23,7 +23,9 @@ function draw()
     // smooth the transitions by 0.1 seconds
     osc.freq(freq, 0.1);
     osc.amp(amp, 0.1);
+    fill(0);
   }
+   ellipse(mouseX, mouseY, 80, 80);
 }
 
 function playOscillator() 
