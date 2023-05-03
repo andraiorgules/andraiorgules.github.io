@@ -2,7 +2,7 @@ let osc, playing, freq, amp;
 
 function setup() 
 {
-  let cnv = createCanvas(150, 150);
+  let cnv = createCanvas(200, 200);
   cnv.mousePressed(playOscillator);
   osc = new p5.Oscillator('sine');
   textAlign(CENTER);
@@ -10,7 +10,7 @@ function setup()
 
 function draw() 
 {
-  background(250)
+  background(255)
   freq = constrain(map(mouseX, 0, width, 100, 500), 100, 500);
   amp = constrain(map(mouseY, height, 0, 0, 1), 0, 1);
 
@@ -25,7 +25,11 @@ function draw()
     osc.amp(amp, 0.1);
     fill(0);
   }
-   ellipse(mouseX, mouseY, 80, 80);
+  if (! playing)
+  {
+    fill(255)
+  }
+    ellipse(mouseX, mouseY, 80, 80);
 }
 
 function playOscillator() 
