@@ -2,7 +2,7 @@ let osc, playing, freq, amp;
 
 function setup() 
 {
-  let cnv = createCanvas(100, 100);
+  let cnv = createCanvas(windowWidth/4, windowHeight/4);
   cnv.mousePressed(playOscillator);
   osc = new p5.Oscillator('sine');
 }
