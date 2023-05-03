@@ -5,6 +5,7 @@ function setup()
   let cnv = createCanvas(150, 150);
   cnv.mousePressed(playOscillator);
   osc = new p5.Oscillator('sine');
+  textAlign(CENTER);
 }
 
 function draw() 
