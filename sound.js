@@ -21,9 +21,9 @@ function draw()
     osc.freq(freq, 0.1);
     osc.amp(amp, 0.1);
     fill(0);
-  text('Click and Drag to Play', 15, 15);
-  text('Freq: ' + freq, 15, 16);
-  text('Amp: ' + amp, 15, 17);
+  text('Click and Drag to Play', 15, 20);
+  text('Freq: ' + freq, 15, 40);
+  text('Amp: ' + amp, 15, 60);
   }
     ellipse(mouseX, mouseY, 80, 80);
 }
