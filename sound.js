@@ -13,17 +13,19 @@ function draw()
   freq = constrain(map(mouseX, 0, width, 100, 500), 100, 500);
   amp = constrain(map(mouseY, height, 0, 0, 1), 0, 1);
 
-  text('Click and Drag to Play', 15, 15);
+  text('Click and Drag to Play', 20, 20);
 
   if (playing) 
   {
     // smooth the transitions by 0.1 seconds
     osc.freq(freq, 0.1);
     osc.amp(amp, 0.1);
-    fill(0);
-  text('Click and Drag to Play', 15, 20);
-  text('Freq: ' + freq, 15, 40);
-  text('Amp: ' + amp, 15, 60);
+   
+  text('Click and Drag to Play', 20, 20);
+  text('Freq: ' + freq, 20, 40);
+  text('Amp: ' + amp, 20, 60);
+    
+     fill(0);
   }
     ellipse(mouseX, mouseY, 80, 80);
 }
